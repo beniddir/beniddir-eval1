@@ -1,0 +1,246 @@
+/*  importer la typo */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+/* style géneral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  style de header */
+
+#div-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+   height: 50px;
+   align-items: center;
+
+}
+nav a{ 
+    color: white;
+    padding-left: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+
+}
+.logo-header{
+    width: 100px;
+}
+/*  fin style header  */
+/*  style de main  */
+/*  style de la premiére rangée */
+
+/*  style de la premiére rangée */
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+}
+
+
+#premier-rang{
+    background-image: url(images/hero-image.jpg);
+    background-size: cover; 
+    background-position: top;
+    height: 400px;
+
+}
+#premier-rang h1{
+   
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2rem;
+  
+}
+#premier-rang p{
+    margin-top: 4rem;
+    color:white;
+    margin:0 auto;
+ 
+    padding-bottom: 3rem;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#premier-rang .bi{
+    color:#e74c3c;
+    font-size: 30px;
+
+}
+/* fin du style de la 1 iere rangée */
+
+/*  la deuxiéme rangée */
+.rang2{
+    padding-top: 50px;
+    height: 100px;
+}
+.rang2div a{
+    padding-top: 100px;
+    color: #e74c3c;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+#divvide{
+    height: 1px;
+    border-top: 1px solid #b83e30;
+    width: 90px;
+    background-color: #b83e30;
+    margin: 0 auto;
+}
+ /*  fin du style de la 2iem rangée */
+
+ /*  style de la troisiéme rangée */
+
+ .rang3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+   
+    height: 300px;
+
+   
+}
+
+
+.rang3 h2{
+    color: #e74c3c;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.rang3 p{
+    margin :0 auto;
+    
+}
+
+
+
+/*  fin du style de la 3iém rangée */
+
+/*  style de la 4 iemme rangée */
+.rang4 a{
+    color: #e74c3c;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.rang4 span{
+    font-weight: bold;
+}
+#inscrire{
+    color: #fff;
+    background-color:#e74c3c;
+    border-radius: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* pour js */
+.div1-changement{
+ 
+    background-image: url(images/joanne.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 25%;
+    height: 100%;
+
+    
+
+}
+.div2-changement{
+
+    background-image: url(images/gaston.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 25%;
+    height: 100%;
+}
+
+.div3-changement{
+  
+    background-image: url(images/manuel.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 25%;
+    height: 100%;
+}
+.div4-changement{
+  
+    background-image: url(images/tracy.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 25%;
+    height: 100%;
+}
+
+/* media queries */
+
+
+.modal{
+    display:none;
+}
+
+
+
+#menu-berger{
+    color: #fff;
+    font-size: 20px;
+    z-index: 9999;
+    position: fixed;
+    top:20px;
+    right:20px;
+
+}
+
+
+@media screen and (max-width: 991px){
+.modal{
+    display:block;
+}
+.nav-bar{
+    display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style footer */
+footer{
+    height: 200px;
+    background-color:#e74c3c;
+}
+#footer{
+    padding-top: 150px;
+}
+#footer img{
+    width: 200px;
+    height: 30px;
+}

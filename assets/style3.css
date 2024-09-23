@@ -1,0 +1,156 @@
+/*  importer la typo */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+/* style géneral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  style de header */
+
+#div-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+   height: 50px;
+   align-items: center;
+
+}
+nav a{ 
+    color: white;
+    padding-left: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+
+}
+.logo-header{
+    width: 100px;
+}
+
+/*  style de main  */
+/*  style de la premiére rangée */
+#premier-rang{
+    background-image: url(images/hero-image.jpg);
+    background-size: cover; 
+    background-position: top;
+    height: 300px;
+
+}
+#premier-rang h1{
+    padding-top: 2rem;
+    color: white;
+    font-size: 30px;
+    padding-bottom:1rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+#premier-rang p{
+    color:white;
+    padding-bottom: 1rem;
+}
+
+
+#imgrange1{
+    width: 60px;
+    height: 60px;
+}
+.btn-warning{
+    color: white  !important; 
+    border-radius: 5px;
+    background-color: #b83e30 !important;
+    border: none !important;
+    text-decoration: none;
+}
+ 
+.rang2 a{
+
+    color: #e74c3c;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin-top: 2rem;
+
+}
+#divvide{
+    height: 1px;
+    border-top: 1px solid #e74c3c;
+    width: 90px;
+    background-color: #e74c3c;
+    margin: 0 auto;
+}
+
+/*  style formulaire  */
+
+#nom,#prenom,#email{
+    height: 30px;
+}
+#selection{
+    height: 35px;
+}
+
+
+#boutonenvoyer{
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+
+/* style footer */
+footer{
+    height: 200px;
+    background-color:#e74c3c;
+}
+#footer{
+    padding-top: 150px;
+}
+#footer img{
+    width: 200px;
+    height: 30px;
+}
+/* pour js */
+.erreur{
+    border:1px solid red;
+}
+.valide{
+    border: 1px solid green;
+}
+
+/* media queries */
+
+
+.modal{
+    display:none;
+}
+
+
+#menu-berger{
+    color: #fff;
+    font-size: 20px;
+    z-index: 9999;
+    position: fixed;
+    top:20px;
+    right:20px;
+
+}
+
+
+@media screen and (max-width: 991px){
+.modal{
+    display:block;
+}
+.nav-bar{
+    display: none;
+}
+
+}
+
+

@@ -1,0 +1,194 @@
+/*  importer la typo */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+/* style géneral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+img{
+    max-width: 100%;
+}
+
+/*  style de header */
+
+#div-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+   height: 50px;
+   align-items: center;
+
+}
+nav a{ 
+    color: white;
+    padding-left: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+
+}
+.logo-header{
+    width: 100px;
+}
+/*  style de main  */
+/*  style de la premiére rangée */
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+#premier-rang{
+    background-image: url(images/hero-image.jpg);
+    background-size: cover; 
+    background-position: top;
+    height: 400px;
+
+}
+#premier-rang h1{
+   
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+  
+}
+#premier-rang p{
+    color:white;
+ 
+}
+
+
+#imgrange1{
+    width: 60px;
+    height: 60px;
+}
+.btn-warning{
+    color: white  !important; 
+    border-radius: 5px;
+    background-color: #b83e30 !important;
+    border: none !important;
+    text-decoration: none;
+}
+/*  style deuxiéme rangée */
+
+
+.rang2{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.rang2 h2{
+    color: #b83e30;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+#divvide{
+    height: 1px;
+    border-top: 1px solid #b83e309f;
+    width: 100px;
+    background-color: #b83e30;
+    margin: 0 auto;
+}
+.rang2 p{
+    padding-top:1rem;
+    font-size: 20px;
+}
+    
+span{
+    color:#b83e30;
+}
+/*  style rangée 3 */
+.rang3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+.titrerange3{
+    color: #b83e30;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 2rem ;
+    font-size: 20px;
+  
+
+}
+
+.rang3 h3{
+    color: #b83e30;
+    text-transform: uppercase;
+    padding-top: 2rem ;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+
+}
+.bi{
+    color: #fff;
+    background-color: rgb(71,71,71);
+    font-size: 30px;
+    border-radius: 50%;
+    
+    padding: 10px 15px;
+}
+.btn{
+    color: #e74c3c;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+
+}
+/* style footer */
+footer{
+    height: 200px;
+    background-color:#e74c3c;
+}
+#footer{
+    padding-top: 150px;
+}
+#footer img{
+    width: 200px;
+    height: 30px;
+}
+/* media queries */
+
+
+.modal{
+    display:none;
+}
+
+
+
+#menu-berger{
+    color: #fff;
+    font-size: 20px;
+    z-index: 9999;
+    position: fixed;
+    top:2px;
+    right:2px;
+
+}
+
+
+@media screen and (max-width: 991px){
+.modal{
+    display:block;
+}
+.nav-bar{
+    display: none;
+}
+
+}
